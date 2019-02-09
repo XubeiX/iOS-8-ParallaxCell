@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7581C33F220F4CD800B7D0B3 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C33E220F4CD800B7D0B3 /* DataSource.swift */; };
+		7581C341220F4D4400B7D0B3 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C340220F4D4400B7D0B3 /* CellData.swift */; };
 		75EDB181220F456200478351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDB180220F456200478351 /* AppDelegate.swift */; };
-		75EDB183220F456200478351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDB182220F456200478351 /* ViewController.swift */; };
+		75EDB183220F456200478351 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDB182220F456200478351 /* TableViewController.swift */; };
 		75EDB186220F456200478351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EDB184220F456200478351 /* Main.storyboard */; };
 		75EDB188220F456400478351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EDB187220F456400478351 /* Assets.xcassets */; };
 		75EDB18B220F456400478351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EDB189220F456400478351 /* LaunchScreen.storyboard */; };
+		75EDB196220F492900478351 /* ParallaxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EDB195220F492900478351 /* ParallaxViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7581C33E220F4CD800B7D0B3 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7581C340220F4D4400B7D0B3 /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		75EDB17D220F456200478351 /* ParallaxCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EDB180220F456200478351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75EDB182220F456200478351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75EDB182220F456200478351 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		75EDB185220F456200478351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75EDB187220F456400478351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75EDB18A220F456400478351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75EDB18C220F456400478351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EDB195220F492900478351 /* ParallaxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		75EDB17F220F456200478351 /* ParallaxCell */ = {
 			isa = PBXGroup;
 			children = (
+				75EDB194220F458700478351 /* Controller */,
+				75EDB193220F458200478351 /* View */,
+				75EDB192220F457900478351 /* Model */,
 				75EDB180220F456200478351 /* AppDelegate.swift */,
-				75EDB182220F456200478351 /* ViewController.swift */,
 				75EDB184220F456200478351 /* Main.storyboard */,
 				75EDB187220F456400478351 /* Assets.xcassets */,
 				75EDB189220F456400478351 /* LaunchScreen.storyboard */,
 				75EDB18C220F456400478351 /* Info.plist */,
+				7581C33E220F4CD800B7D0B3 /* DataSource.swift */,
 			);
 			path = ParallaxCell;
+			sourceTree = "<group>";
+		};
+		75EDB192220F457900478351 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7581C340220F4D4400B7D0B3 /* CellData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75EDB193220F458200478351 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75EDB195220F492900478351 /* ParallaxViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75EDB194220F458700478351 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75EDB182220F456200478351 /* TableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75EDB183220F456200478351 /* ViewController.swift in Sources */,
+				75EDB196220F492900478351 /* ParallaxViewCell.swift in Sources */,
+				75EDB183220F456200478351 /* TableViewController.swift in Sources */,
+				7581C33F220F4CD800B7D0B3 /* DataSource.swift in Sources */,
+				7581C341220F4D4400B7D0B3 /* CellData.swift in Sources */,
 				75EDB181220F456200478351 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
